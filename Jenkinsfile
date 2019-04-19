@@ -1,5 +1,9 @@
 pipeline {
-  agent { docker 'maven:3-alpine' }   
+  agent { 
+      docker {
+          image 'goforgold/build-container:latest'
+    }
+  }   
   stages {
     stage('Build') {
       steps {
