@@ -1,5 +1,6 @@
 pipeline {
   agent none
+  node {
   stages {
     stage('Build') {
       steps {
@@ -34,6 +35,7 @@ pipeline {
         }
       }
     }
+  }
   }
   environment {
     npm_config_cache = 'npm-cache'
