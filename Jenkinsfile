@@ -3,7 +3,10 @@ pipeline {
       docker {
           image 'goforgold/build-container:latest'
     }
-  }   
+  }
+  environment {
+        HOME = '.'
+  }
   stages {
     stage('Build') {
       steps {
