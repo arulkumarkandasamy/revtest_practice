@@ -19,7 +19,7 @@
     },
     {
       "type": "file",
-      "source": "revtest_practice/bin/",
+      "source": "/revtest_practice/bin/",
       "destination": "/home/ubuntu/node-app/"
     },
     {
