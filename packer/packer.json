@@ -19,7 +19,7 @@
     },
     {
       "type": "file",
-      "source": "packer/",
+      "source": "packer/bin/www",
       "destination": "/home/ubuntu/node-app/"
     },
     {
