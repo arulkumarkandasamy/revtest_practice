@@ -1,6 +1,5 @@
 pipeline {
-  agent none
-  node {
+  agent { docker 'maven:3-alpine' }   
   stages {
     stage('Build') {
       steps {
@@ -36,7 +35,7 @@ pipeline {
       }
     }
   }
-  }
+  
   environment {
     npm_config_cache = 'npm-cache'
   }
