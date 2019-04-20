@@ -1,9 +1,5 @@
 pipeline {
-  agent { 
-      docker {
-          image 'goforgold/build-container:latest'
-    }
-  }
+  agent any
   environment {
         npm_config_cache = 'npm-cache'
         HOME = '.'
